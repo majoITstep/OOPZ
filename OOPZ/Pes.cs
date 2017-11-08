@@ -13,9 +13,10 @@ namespace OOPZ
         {
             this.vyuzitie = vyuzitie;
         }
-        public void PopisPsa()
+        public override void VydajZvuk()
         {
-            Console.WriteLine("Charakteristika psa");
+            Console.WriteLine("Charakteristicky zvuk psa:{0}",charakterZvuk);
+                          
         }
 
     }

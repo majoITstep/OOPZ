@@ -8,7 +8,7 @@ namespace OOPZ
 {
     class Zviera
     {
-        private string plemeno, charakterZvuk;
+        protected string plemeno, charakterZvuk;
         private int maxRychlost, pocetNoh;
         private bool leziePoStromoch;
 
@@ -21,9 +21,9 @@ namespace OOPZ
             this.leziePoStromoch = leziePoStromoch;
         }
 
-        public void VypisInformacie()
+        public virtual void VydajZvuk()
         {
-            Console.WriteLine("Toto zviera ma tieto charakteristiky:\nPlemeno:{0}\nCharakteristicky zvuk:{1}\nMaximalna rychlost:{2}\nPocet noh:{3}\nLezie po stromoch:{4}", plemeno, charakterZvuk, maxRychlost, pocetNoh, leziePoStromoch);
+            Console.WriteLine("Toto je všeobecný zvuk zvieraťa:" + charakterZvuk);
         }
     }
 }
