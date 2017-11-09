@@ -15,9 +15,12 @@ namespace OOPZ
         }
         public override void VydajZvuk()
         {
-            Console.WriteLine("Charakteristicky zvuk psa:{0}",charakterZvuk);
+            Console.WriteLine("Charakteristicky zvuk psa:{0}\n",charakterZvuk);
                           
         }
-
+        public new void VypisInfo()
+        {
+            Console.WriteLine("Charakteristika psa:\n" + "Nazov plemena:{0}\nMaximalna rychlost:{1}\nPocet noh:{2}\nDokaze liezt po stromoch:{3}\nVyuzitie:{4}", plemeno, maxRychlost, pocetNoh, leziePoStromoch, vyuzitie);
+        }
     }
 }
