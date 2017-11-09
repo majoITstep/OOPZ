@@ -10,11 +10,14 @@ namespace OOPZ
     {
         static void Main(string[] args)
         {
-            Zviera MojeZviera = new Zviera("Terier", "Hau", 50, 4, false);
+            Zviera MojeZviera = new Zviera("Terier", "Zvuk", 50, 4, false);
             MojeZviera.VydajZvuk();
 
             Pes MojPes = new Pes("Slovensky cuvac", "Hau", 45, 4, false, "pastiersky pes");
             MojPes.VydajZvuk();
+
+            Macka MojaMacka = new Macka("Siamska", "Mnau", 40, 4, true, "dlhosrsta");
+            MojaMacka.VydajZvuk();
 
             Console.ReadLine();
         }
