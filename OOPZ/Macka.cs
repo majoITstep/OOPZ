@@ -9,7 +9,7 @@ namespace OOPZ
     class Macka : Zviera
     {
         private string typSrsti;
-        public Macka(string plemeno, string charakterZvuk, int maxRychlost, int pocetNoh, bool leziePoStromoch, string typSrsti) : base(plemeno, charakterZvuk, maxRychlost, pocetNoh, leziePoStromoch)
+        public Macka(string plemeno, string charakterZvuk, int maxRychlost, int pocetNoh, bool leziePoStromoch,string typSrsti) : base(plemeno, charakterZvuk, maxRychlost, pocetNoh, leziePoStromoch)
         {
             this.typSrsti = typSrsti;
         }
@@ -21,5 +21,9 @@ namespace OOPZ
         {
             Console.WriteLine("Charakteristika macky:\n" + "Nazov plemena:{0}\nMaximalna rychlost:{1}\nPocet noh:{2}\nDokaze liezt po stromoch:{3}\nTyp srsti:{4}", plemeno, maxRychlost, pocetNoh, leziePoStromoch, typSrsti);
         }
+        public override void NakrmZviera()
+            {
+            nakrmeny = true;
+            }
     }
 }

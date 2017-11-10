@@ -6,11 +6,12 @@ using System.Threading.Tasks;
 
 namespace OOPZ
 {
-    class Zviera
+    abstract class Zviera
     {
         protected string plemeno, charakterZvuk;
         protected int maxRychlost, pocetNoh;
         protected bool leziePoStromoch;
+        protected bool nakrmeny;
 
         public Zviera(string plemeno, string charakterZvuk, int maxRychlost, int pocetNoh, bool leziePoStromoch)
         {
@@ -29,5 +30,7 @@ namespace OOPZ
         {
             Console.WriteLine("Charakteristiky zvierat:\n"+"Nazov plemena:{0}\nMaximalna mozna zadana rychlost v km/h:{1}\nPocet noh:{2}\nDokaze liezt po stromoch:{3}", plemeno, maxRychlost, pocetNoh, leziePoStromoch);
         }
+
+        public abstract void NakrmZviera();
     }
 }

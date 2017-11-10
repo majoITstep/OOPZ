@@ -9,7 +9,8 @@ namespace OOPZ
     class Pes : Zviera
     {
         private string vyuzitie;
-        public Pes(string plemeno, string charakterZvuk, int maxRychlost, int pocetNoh, bool leziePoStromoch, string vyuzitie) : base(plemeno, charakterZvuk, maxRychlost, pocetNoh, leziePoStromoch)
+        
+        public Pes(string plemeno, string charakterZvuk, int maxRychlost, int pocetNoh, bool leziePoStromoch,string vyuzitie) : base(plemeno, charakterZvuk, maxRychlost, pocetNoh, leziePoStromoch)
         {
             this.vyuzitie = vyuzitie;
         }
@@ -22,5 +23,9 @@ namespace OOPZ
         {
             Console.WriteLine("Charakteristika psa:\n" + "Nazov plemena:{0}\nMaximalna rychlost:{1}\nPocet noh:{2}\nDokaze liezt po stromoch:{3}\nVyuzitie:{4}", plemeno, maxRychlost, pocetNoh, leziePoStromoch, vyuzitie);
         }
+        public override void NakrmZviera()
+            {
+            nakrmeny = true;
+            }
     }
 }

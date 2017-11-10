@@ -10,17 +10,18 @@ namespace OOPZ
     {
         static void Main(string[] args)
         {
-            Zviera MojeZviera = new Zviera("Plemeno", "Zvuk",120, 4, false);
-            MojeZviera.VypisInfo();
-            MojeZviera.VydajZvuk();
-
-            Pes MojPes = new Pes("Slovensky cuvac", "Hau", 45, 4, false, "pastiersky pes");
+            
+            Zviera MojPes = new Pes("Slovensky cuvac", "Hau", 45, 4, false, "pastiersky pes");
             MojPes.VypisInfo();
             MojPes.VydajZvuk();
+            MojPes.NakrmZviera();
 
-            Macka MojaMacka = new Macka("Siamska", "Mnau", 40, 4, true, "dlhosrsta");
+            Zviera MojaMacka = new Macka("Siamska", "Mnau", 40, 4, true, "dlhosrsta");
             MojaMacka.VypisInfo();
             MojaMacka.VydajZvuk();
+            MojaMacka.NakrmZviera();
+
+                     
 
             Console.ReadLine();
         }
